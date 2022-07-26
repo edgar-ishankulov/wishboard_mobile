@@ -1,6 +1,10 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { Input, Box, Center, NativeBaseProvider } from "native-base";
+import Search from "./components/Search";
+import Logo from "./components/Logo";
+import Welcome from "./components/Welcome";
 
 
 
@@ -8,9 +12,11 @@ import { StyleSheet, Text, View, ScrollView } from "react-native";
 
 function HomeScreen( {navigation }) {
     return (
-      <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'flex-start' }}>
-        <Text style={{ flex: 4, alignItems: 'flex-start', justifyContent: 'flex-start' }}>Home Screen</Text>
-      </View>
+ <NativeBaseProvider>
+<Logo></Logo>
+   <Search></Search>
+   <Welcome></Welcome>
+ </NativeBaseProvider>
     );
   }
 
