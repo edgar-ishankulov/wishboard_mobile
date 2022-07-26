@@ -7,6 +7,8 @@ import {
   Button,
   Image,
 } from "native-base";
+import OpenURLButton from "./OpenURLButton";
+
 
 function Welcome() {
     return (
@@ -18,9 +20,9 @@ function Welcome() {
             </Text>
         </Center>
         <Center>
-          <Button variant={"outline"}>
-            Learn More
-          </Button>
+          <OpenURLButton variant={"outline"} buttonText={"Learn More"} url={"https://unsplash.com"} />
+            
+
         </Center>
   </View>
 )}
