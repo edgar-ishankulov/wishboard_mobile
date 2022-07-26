@@ -47,6 +47,16 @@ function CustomDrawerContent(props) {
             }}
           ><Text>Home</Text></Pressable>
         </VStack>
+        <VStack space="3">
+          <Pressable
+            px="5"
+            py="3"
+            rounded="md"
+            onPress={(event) => {
+              props.navigation.navigate("Home");
+            }}
+          ><Text>My Wishboard</Text></Pressable>
+        </VStack>
       </DrawerContentScrollView>
     </NativeBaseProvider>
   );

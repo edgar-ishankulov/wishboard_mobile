@@ -1,4 +1,5 @@
 import React from "react";
+
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 import { Provider } from "react-redux";
@@ -17,6 +18,9 @@ import MyDrawer from "./components/MyDrawer";
 const Stack = createNativeStackNavigator();
 
 function App() {
+
+
+
   return (
     <Provider store={store}>
       <NavigationContainer>

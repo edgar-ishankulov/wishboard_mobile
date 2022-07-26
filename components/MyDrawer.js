@@ -9,15 +9,7 @@ import {
 } from "@react-navigation/drawer";
 import CustomDrawerContent from "./CustomDrawerContent";
 import HomeScreen from "../HomeScreen";
-import AppBar from "./AppBar";
 
-function Notifications() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Notifications Screen</Text>
-    </View>
-  );
-}
 
 const Drawer = createDrawerNavigator();
 
@@ -28,7 +20,6 @@ function MyDrawer() {
       drawerContent={(props) => <CustomDrawerContent {...props} />}
     >
       <Drawer.Screen key={"Home"} name="Home" component={HomeScreen} />
-      <Drawer.Screen key={"AppBar"} name="AppBar" component={AppBar} />
     </Drawer.Navigator>
   );
 }

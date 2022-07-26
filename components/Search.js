@@ -10,13 +10,13 @@ import {
   Image,
 } from "native-base";
 
-function Search() {
+function Search({handleSearchSubmit, isLoading}) {
   return (
     <View style={{ width: "100%" }}>
 
       <Box alignItems="center">
         <Input mx="3" placeholder="Search" w="75%" mt={"10%"} />
-        <Button my={"3"}>Search</Button>
+        <Button my={"3"} onPress={handleSearchSubmit}>Search</Button>
       </Box>
     </View>
   );
