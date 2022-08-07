@@ -12,20 +12,16 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
   DrawerItem,
-} from '@react-navigation/drawer';
+} from "@react-navigation/drawer";
 import MyDrawer from "./components/MyDrawer";
 
 const Stack = createNativeStackNavigator();
 
 function App() {
-
-
-
   return (
     <Provider store={store}>
       <NavigationContainer>
-
-<MyDrawer />
+        <MyDrawer />
       </NavigationContainer>
     </Provider>
   );
